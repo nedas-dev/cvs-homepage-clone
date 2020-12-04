@@ -303,3 +303,87 @@ section#delivery-options{
     }
 
 }
+
+section#location{
+    width:100%;
+    background-color: rgb(220, 219, 219);;
+    div.content{
+        text-align: center;
+
+        h3{
+            padding: 20px;
+        }
+
+        address{
+            font-size: 2rem;
+            color: rgb(108, 107, 107);
+            margin-bottom: 10px;
+        }
+
+        p.region{
+            span{
+                color: $cvs-color;
+                cursor: pointer;
+                &:hover{
+                    text-decoration: underline $cvs-color;
+                }
+            }
+            i{
+                padding: 0 5px;
+                font-size: 1.3rem;
+                color: black;
+            }
+        }
+
+        p.office-hours{
+            padding: 5px;
+
+            &.extra{
+                margin-top:10px;
+            }
+        }
+
+        div.wrapper{
+            margin: 10px 0px;
+            a{
+                color: $cvs-color;
+                text-decoration: none;
+                i{
+                    color:black;
+                    font-size: 1.3rem;
+                }
+
+                &.extra{
+                    margin-left: 10px;
+                }
+
+                &:hover{
+                    text-decoration: underline $cvs-color;
+                }
+            }
+        }
+
+        div.services{
+            p{
+
+                font-size: 1.2rem;
+                color: $cvs-color;
+                margin: 30px 0px;
+                cursor: pointer;
+                i{
+                    font-size: 2rem;
+                    padding: 0px 10px;
+                    color: rgb(67, 145, 63);
+                }
+
+                &:hover{
+                    text-decoration: underline $cvs-color;
+                }
+
+                .yellow{
+                    color: rgb(160, 160, 38);
+                }
+            }
+        }
+    }
+}
