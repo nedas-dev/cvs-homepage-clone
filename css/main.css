@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.reg-button {
+  margin: 10px 0px;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  width: 100%;
+  cursor: pointer;
+}
+.reg-button.red {
+  border: none;
+  background-color: #C81500;
+  color: #fff;
+}
+.reg-button.red:hover {
+  background-color: #f02525;
+}
+.reg-button.white {
+  border: 1px solid #C81500;
+  color: #C81500;
+  background-color: #fff;
+}
+.reg-button.white:hover {
+  color: #f02525;
+}
+
+div.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+div.extra-nav {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px 40px;
+  line-height: 1.3rem;
+}
+div.extra-nav strong a {
+  text-decoration: none;
+  color: #C81500;
+}
+
+nav#navbar {
+  width: 100%;
+  background-color: #C81500;
+  display: grid;
+  grid-template-columns: 40px 1fr 50px 50px;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+nav#navbar div {
+  display: inline;
+  cursor: pointer;
+}
+nav#navbar div h1, nav#navbar div h2, nav#navbar div h3 {
+  color: #fff;
+}
+nav#navbar div.menu-bar {
+  color: #fff;
+}
+nav#navbar div.logo {
+  text-align: center;
+}
+nav#navbar div.logo h2 {
+  font-size: 1.2rem;
+}
+nav#navbar div.logo h2 span {
+  margin-left: 2px;
+  font-weight: 200;
+}
+nav#navbar div.logo h2 sup {
+  font-size: 8px;
+}
+nav#navbar div.search, nav#navbar div.cart {
+  color: #fff;
+}
+
+div.searchbox {
+  margin-top: 165px;
+  padding: 0px 10px;
+  border: 2px solid gainsboro;
+  height: 50px;
+}
+div.searchbox i.fa-search {
+  font-size: 1.3rem;
+  color: red;
+  cursor: pointer;
+}
+div.searchbox input {
+  display: inline;
+  border: none;
+  width: 80%;
+  height: 100%;
+  font-size: 1.3rem;
+  padding-left: 10px;
+}
+div.searchbox input:focus, div.searchbox input:hover {
+  border-color: sandybrown;
+}
+
+section#fast-links div.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  padding: 5px 8px 8px 8px;
+  align-items: center;
+  justify-items: center;
+}
+section#fast-links div.wrapper div.item {
+  cursor: pointer;
+  background-color: #E8F6F9;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+section#fast-links div.wrapper div.item h4 {
+  display: inline-block;
+  color: #CC0000;
+  flex: 10;
+  margin-left: 10px;
+}
+section#fast-links div.wrapper div.item span {
+  flex: 1;
+  color: #CC0000;
+}
+section#fast-links div.wrapper div.item:hover {
+  text-decoration: underline #C81500;
+}
+
+section#covid-info {
+  border: 1px solid gainsboro;
+  width: 99%;
+  margin: auto;
+}
+section#covid-info h1 {
+  padding: 15px;
+  font-size: 2rem;
+}
+section#covid-info p {
+  padding: 15px;
+}
+section#covid-info div.image {
+  margin-top: 20px;
+  text-align: center;
+}
+section#covid-info div.image img {
+  width: 90%;
+}
+
+section#categories h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 20px;
+}
+section#categories div.wrapper {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "beauty beauty" "health vitamins" "home personal" "vaccine vaccine" "photos .";
+}
+section#categories div.wrapper div.item {
+  background-color: #dad5d5;
+}
+section#categories div.wrapper div.item p {
+  text-align: center;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+section#categories div.wrapper div.item div.image {
+  text-align: center;
+  padding: 5px;
+}
+section#categories div.wrapper div.item div.image img {
+  width: 90%;
+}
+section#categories div.wrapper div.item:hover {
+  cursor: pointer;
+}
+section#categories div.wrapper div.item:hover p {
+  color: #C81500;
+}
+section#categories div.wrapper div.item.beauty {
+  grid-area: beauty;
+}
+section#categories div.wrapper div.item.health {
+  grid-area: health;
+}
+section#categories div.wrapper div.item.vitamins {
+  grid-area: vitamins;
+}
+section#categories div.wrapper div.item.home {
+  grid-area: home;
+}
+section#categories div.wrapper div.item.vaccine {
+  grid-area: vaccine;
+}
+section#categories div.wrapper div.item.personal {
+  grid-area: personal;
+}
+section#categories div.wrapper div.item.photos {
+  grid-area: photos;
+}
+
+section#delivery-options {
+  background-color: #00334B;
+  color: #fff;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px 0px;
+}
+section#delivery-options h2 {
+  text-align: center;
+  padding: 10px;
+}
+section#delivery-options div.content {
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+}
+section#delivery-options div.content div.item {
+  padding: 15px 0px;
+}
+section#delivery-options div.content div.item img {
+  float: left;
+  clear: left;
+  margin-top: 10px;
+}
+section#delivery-options div.content div.item h1, section#delivery-options div.content div.item h2, section#delivery-options div.content div.item h3, section#delivery-options div.content div.item h4 {
+  padding: 10px;
+}
+section#delivery-options div.content div.item h4 {
+  text-align: center;
+  cursor: pointer;
+  color: #B8E3EB;
+}
+section#delivery-options div.content div.item h4:hover {
+  text-decoration: underline;
+}
+section#delivery-options div.content div.item h4 span {
+  text-decoration: none;
+}
+section#delivery-options div.content div.item p {
+  font-size: 0.8rem;
+}
+section#delivery-options div.content div.item.extra {
+  border-bottom: 1px solid #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

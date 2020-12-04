@@ -1,0 +1,15 @@
+{
+  "name": "cvs_homepage_project",
+  "version": "1.0.0",
+  "description": "CVS home page clone with HTML/CSS/SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nedas Snarskis",
+  "license": "MIT",
+  "dependencies": {
+    "nodejs": "0.0.0",
+    "sass": "^1.29.0"
+  }
+}
