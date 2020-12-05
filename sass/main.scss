@@ -342,16 +342,19 @@ section#location{
     div.content{
         text-align: center;
 
+        // "Find a PVS pharmacy"
         h3{
             padding: 20px;
         }
 
+        // address of the store
         address{
             font-size: 2rem;
             color: rgb(108, 107, 107);
             margin-bottom: 10px;
         }
 
+        // city / zip code of the store
         p.region{
             span{
                 color: $cvs-color;
@@ -396,8 +399,10 @@ section#location{
             }
         }
 
+        // Pharmacy and Photos links.
         div.services{
             padding: 20px 0px;
+            
             div.item{
                 text-align: center;
                 padding: 20px;
@@ -441,7 +446,7 @@ footer#main-footer{
         h4{
             margin: 10px 0px;
         }
-
+        // flex wrap for social media icons
         div.wrapper{
             display: flex;
             justify-content: center;
@@ -471,6 +476,7 @@ footer#main-footer{
             font-size: 0.9rem;
         }
 
+        // Links to footer's pages
         div.menu{
             text-align: center;
             padding: 20px;
