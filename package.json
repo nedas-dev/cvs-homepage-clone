@@ -5,8 +5,12 @@
   "homepage": "https://nedas-dev.github.io/cvs-homepage-clone",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch sass:css"
+    "sass": "sass --watch sass:css",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Nedas Snarskis",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
