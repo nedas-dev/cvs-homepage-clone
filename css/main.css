@@ -8,6 +8,22 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+div.logo {
+  cursor: pointer;
+  color: #C81500;
+  text-align: center;
+}
+div.logo h2 {
+  font-size: 1.2rem;
+}
+div.logo h2 span {
+  margin-left: 2px;
+  font-weight: 200;
+}
+div.logo h2 sup {
+  font-size: 8px;
+}
+
 .reg-button {
   margin: 10px 0px;
   width: 100%;
@@ -71,35 +87,22 @@ nav#navbar div h1, nav#navbar div h2, nav#navbar div h3 {
 nav#navbar div.menu-bar {
   color: #fff;
 }
-nav#navbar div.logo {
-  text-align: center;
-}
-nav#navbar div.logo h2 {
-  font-size: 1.2rem;
-}
-nav#navbar div.logo h2 span {
-  margin-left: 2px;
-  font-weight: 200;
-}
-nav#navbar div.logo h2 sup {
-  font-size: 8px;
-}
 nav#navbar div.search, nav#navbar div.cart {
   color: #fff;
 }
 
-div.searchbox {
+div.wrapper-2 div.searchbox {
   margin-top: 165px;
   padding: 0px 10px;
   border: 2px solid gainsboro;
   height: 50px;
 }
-div.searchbox i.fa-search {
+div.wrapper-2 div.searchbox i.fa-search {
   font-size: 1.3rem;
   color: red;
   cursor: pointer;
 }
-div.searchbox input {
+div.wrapper-2 div.searchbox input {
   display: inline;
   border: none;
   width: 80%;
@@ -107,7 +110,7 @@ div.searchbox input {
   font-size: 1.3rem;
   padding-left: 10px;
 }
-div.searchbox input:focus, div.searchbox input:hover {
+div.wrapper-2 div.searchbox input:focus, div.wrapper-2 div.searchbox input:hover {
   border-color: sandybrown;
 }
 
@@ -201,6 +204,16 @@ section#categories div.wrapper div.item:hover p {
 }
 section#categories div.wrapper div.item.beauty {
   grid-area: beauty;
+}
+section#categories div.wrapper div.item.beauty div.image {
+  padding: 20px;
+  background-image: url("../images/categories/beauty.jpg");
+  width: 90%;
+  min-height: 400px;
+  margin: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 section#categories div.wrapper div.item.health {
   grid-area: health;
@@ -317,22 +330,221 @@ section#location div.content div.wrapper a.extra {
 section#location div.content div.wrapper a:hover {
   text-decoration: underline #C81500;
 }
-section#location div.content div.services p {
-  font-size: 1.2rem;
-  color: #C81500;
-  margin: 30px 0px;
-  cursor: pointer;
+section#location div.content div.services {
+  padding: 20px 0px;
 }
-section#location div.content div.services p i {
+section#location div.content div.services div.item {
+  text-align: center;
+  padding: 20px;
+}
+section#location div.content div.services div.item i {
+  display: inline;
   font-size: 2rem;
   padding: 0px 10px;
   color: #43913f;
 }
-section#location div.content div.services p:hover {
+section#location div.content div.services div.item .yellow {
+  color: #a0a026;
+}
+section#location div.content div.services div.item p {
+  display: inline;
+  font-size: 1.2rem;
+  color: #C81500;
+  margin: 0px 0px;
+  cursor: pointer;
+}
+section#location div.content div.services div.item p:hover {
   text-decoration: underline #C81500;
 }
-section#location div.content div.services p .yellow {
-  color: #a0a026;
+
+footer#main-footer div.pre-footer {
+  margin: 30px 0px;
+  text-align: center;
+  color: #fb1a00;
+}
+footer#main-footer div.pre-footer h4 {
+  margin: 10px 0px;
+}
+footer#main-footer div.pre-footer div.wrapper {
+  display: flex;
+  justify-content: center;
+}
+footer#main-footer div.pre-footer div.wrapper div.item {
+  padding: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+footer#main-footer div.pre-footer div.wrapper div.item.fb {
+  color: dodgerblue;
+}
+footer#main-footer div.pre-footer div.wrapper div.item.tw {
+  color: #00acee;
+}
+footer#main-footer div.footer {
+  background-color: #414040;
+}
+footer#main-footer div.footer p {
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+footer#main-footer div.footer div.menu {
+  text-align: center;
+  padding: 20px;
+  line-height: 2rem;
+  font-size: 0.9rem;
+}
+footer#main-footer div.footer div.menu a {
+  padding: 0px 20px;
+  border-right: 1px solid #fff;
+  text-decoration: none;
+  color: #fff;
+}
+footer#main-footer div.footer div.menu a.extra {
+  border: none;
+}
+footer#main-footer div.footer div.menu a:hover {
+  text-decoration: underline #fff;
+}
+
+@media screen and (min-width: 1000px) {
+  div.fixed {
+    position: relative;
+  }
+  div.fixed div.extra-nav {
+    background-color: #C81500;
+    color: #fff;
+    line-height: 2rem;
+  }
+  div.fixed div.extra-nav strong a {
+    color: #0ad122;
+  }
+  div.fixed div.extra-nav strong a:hover {
+    text-decoration: underline #fff;
+  }
+  div.fixed nav#navbar {
+    display: none;
+  }
+
+  div.wrapper-2 {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.wrapper-2 div.logo {
+    flex-basis: 300px;
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  div.wrapper-2 div.logo h2 {
+    font-size: 2rem;
+  }
+  div.wrapper-2 div.searchbox {
+    border-radius: 5px;
+    flex-basis: 600px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+
+  div.searchbox {
+    margin-top: 10px;
+  }
+
+  section#fast-links {
+    padding: 20px 0px;
+  }
+  section#fast-links div.wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  section#covid-info {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+  section#covid-info div.image {
+    display: inline;
+    width: 45%;
+    margin: 0px;
+  }
+  section#covid-info div.wrapper {
+    width: 50%;
+    margin: 0px;
+  }
+
+  section#categories div.wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "beauty health vitamins" "beauty home personal" "vaccine . photos";
+    align-content: center;
+    align-self: center;
+  }
+  section#categories div.wrapper div.item.beauty {
+    text-align: center;
+  }
+  section#categories div.wrapper div.item.beauty div.image {
+    background-image: url("../images/categories/beauty-1.jpg");
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background-size: cover;
+  }
+
+  section#delivery-options {
+    padding: 30px;
+  }
+  section#delivery-options div.content {
+    width: 100%;
+  }
+  section#delivery-options div.content div.item {
+    display: inline-block;
+    width: 30%;
+  }
+  section#delivery-options div.content div.item.extra {
+    border-right: 1px solid #fff;
+    border-bottom: none;
+  }
+  section#delivery-options div.content div.item img {
+    float: none;
+  }
+  section#delivery-options div.content div.item h4 {
+    font-size: 1.2rem;
+  }
+  section#delivery-options div.content div.item p {
+    font-size: 1rem;
+  }
+
+  section#location div.content p.office-hours {
+    line-height: 4rem;
+    display: inline;
+  }
+  section#location div.content p.office-hours.extra {
+    margin-right: 50px;
+  }
+  section#location div.content div.wrapper a.extra {
+    margin-left: 20px;
+  }
+  section#location div.content div.services div.item {
+    display: inline-block;
+  }
+  section#location div.content div.services .yellow {
+    margin-left: 50px;
+  }
+  section#location div.content div.wrapper, section#location div.content div.services, section#location div.content p.region, section#location div.content p.office-hours {
+    font-size: 1.1rem;
+  }
+  section#location div.content address {
+    font-size: 3rem;
+  }
+  section#location div.content h3 {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

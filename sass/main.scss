@@ -10,6 +10,24 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+// Page Main Logo "<3 PVS Pharmacy"
+div.logo{
+    cursor: pointer;
+    color: $cvs-color;
+    text-align: center;
+    h2{
+        font-size: 1.2rem;
+        span{
+            margin-left: 2px;
+            font-weight: 200;
+        }
+        sup{
+            font-size: 8px;
+        }
+    }
+}
+
+
 // Buttons used for website
 .reg-button{
     margin:10px 0px;
@@ -39,6 +57,7 @@ body{
     }
 }
 
+// For smaller devices to make the navbar not move when user scrolls
 div.fixed{
     position:fixed;
     top:0;
@@ -46,6 +65,8 @@ div.fixed{
     width:100%;
 }
 
+// Extra information about something on top
+// of the page.
 div.extra-nav{
     background-color: #fff;
     text-align: center;
@@ -59,6 +80,7 @@ div.extra-nav{
     }
 }
 
+// Main Navigation bar for smaller devices
 nav#navbar{
     width:100%;
     background-color: $cvs-color;
@@ -80,49 +102,40 @@ nav#navbar{
         color: #fff;
     }
 
-    div.logo{
-        text-align: center;
-        h2{
-            font-size: 1.2rem;
-            span{
-                margin-left: 2px;
-                font-weight: 200;
-            }
-            sup{
-                font-size: 8px;
-            }
-        }
-
-    }
-
     div.search, div.cart{
         color: #fff;
     }
 }
 
-div.searchbox{
-    margin-top: 165px;
-    padding: 0px 10px;
-    border: 2px solid rgb(220, 220, 220);
-    height: 50px;
-    i.fa-search{
-        font-size: 1.3rem;
-        color: red;
-        cursor: pointer;
-    }
-    input{
-        display:inline;
-        border:none;
-        width: 80%;
-        height: 100%;
-        font-size: 1.3rem;
-        padding-left: 10px;
-        &:focus, &:hover{
-            border-color: sandybrown;
+// Searchbox + PVS logo
+div.wrapper-2{
+
+
+    div.searchbox{
+        margin-top: 165px;
+        padding: 0px 10px;
+        border: 2px solid rgb(220, 220, 220);
+        height: 50px;
+        i.fa-search{
+            font-size: 1.3rem;
+            color: red;
+            cursor: pointer;
+        }
+        input{
+            display:inline;
+            border:none;
+            width: 80%;
+            height: 100%;
+            font-size: 1.3rem;
+            padding-left: 10px;
+            &:focus, &:hover{
+                border-color: sandybrown;
+            }
         }
     }
 }
 
+// Quick links if user doesn't want to waste time and get straight to them.
 section#fast-links{
     div.wrapper{
         display:grid;
@@ -158,6 +171,8 @@ section#fast-links{
     }
 }
 
+// class name speaks for itself.
+// Covid Information section
 section#covid-info{
     border: 1px solid rgb(220,220,220);
     width: 99%;
@@ -180,6 +195,7 @@ section#covid-info{
     }
 }
 
+// Categories of the store for different products
 section#categories{
     h1{
         text-align: center;
@@ -187,6 +203,7 @@ section#categories{
         padding: 20px;
     }
 
+    // Wrapper for grid to use.
     div.wrapper{
         width: 90%;
         margin:auto;
@@ -225,6 +242,17 @@ section#categories{
             
             &.beauty{
                 grid-area: beauty;
+
+                div.image{
+                    padding: 20px;
+                    background-image: url('../images/categories/beauty.jpg');
+                    width: 90%;
+                    min-height: 400px;
+                    margin:auto;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
             }
             &.health{
                 grid-area: health;
@@ -251,6 +279,7 @@ section#categories{
     }
 }
 
+// Section of delivery options / info
 section#delivery-options{
     background-color: #00334B;
     color: #fff;
@@ -262,6 +291,8 @@ section#delivery-options{
         text-align: center;
         padding: 10px;
     }
+    // Everything is inside content class
+    
     div.content{
         width: 320px;
         margin: 0 auto;
@@ -304,6 +335,7 @@ section#delivery-options{
 
 }
 
+// Location of stores / directions / office hours and etc..
 section#location{
     width:100%;
     background-color: rgb(220, 219, 219);;
@@ -343,6 +375,7 @@ section#location{
             }
         }
 
+        // Wrapper for "Phone Number" + "Directions"
         div.wrapper{
             margin: 10px 0px;
             a{
@@ -364,26 +397,100 @@ section#location{
         }
 
         div.services{
-            p{
-
-                font-size: 1.2rem;
-                color: $cvs-color;
-                margin: 30px 0px;
-                cursor: pointer;
+            padding: 20px 0px;
+            div.item{
+                text-align: center;
+                padding: 20px;
                 i{
+                    display: inline;
                     font-size: 2rem;
                     padding: 0px 10px;
                     color: rgb(67, 145, 63);
                 }
 
-                &:hover{
-                    text-decoration: underline $cvs-color;
-                }
-
                 .yellow{
                     color: rgb(160, 160, 38);
+                }
+                p{
+                    display:inline;
+
+                    font-size: 1.2rem;
+                    color: $cvs-color;
+                    margin: 0px 0px;
+                    cursor: pointer;
+    
+    
+                    &:hover{
+                        text-decoration: underline $cvs-color;
+                    }
+    
                 }
             }
         }
     }
 }
+// Main footer.
+footer#main-footer{
+
+    // Social media icons
+    div.pre-footer{
+        margin: 30px 0px;
+        text-align: center;
+        color: lighten($cvs-color, 10);
+
+        h4{
+            margin: 10px 0px;
+        }
+
+        div.wrapper{
+            display: flex;
+            justify-content: center;
+
+            div.item{
+                padding: 5px;
+                font-size: 2rem;
+                cursor: pointer;
+                &.fb{
+                    color: dodgerblue;
+                }
+
+                &.tw{
+                    color: #00acee;
+                }
+            }
+        }
+    }
+
+    // Main Footer
+    div.footer{
+        background-color: rgb(65, 64, 64);
+        p{
+            text-align: center;
+            color: #fff;
+            padding: 10px;
+            font-size: 0.9rem;
+        }
+
+        div.menu{
+            text-align: center;
+            padding: 20px;
+            line-height: 2rem;
+            font-size: 0.9rem;
+            a{
+                padding: 0px 20px;
+                border-right: 1px solid #fff;
+                text-decoration: none;
+                color: #fff;
+                &.extra{
+                    border:none;
+                }
+
+                &:hover{
+                    text-decoration: underline #fff;
+                }
+            }
+        }
+    }
+}
+
+@import 'media';
