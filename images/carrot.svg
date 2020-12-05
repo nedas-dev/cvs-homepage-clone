@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="44px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-delivery-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0248980733 0.0524956772 16.4701445 0.0524956772 16.4701445 19.8409887 0.0248980733 19.8409887"></polygon>
+    </defs>
+    <g id="wk43-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280-wk43" transform="translate(-895.000000, -1918.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1280" height="3150"></rect>
+            <g id="Module/Fulfillment" transform="translate(-1.000000, 1838.000000)">
+                <g id="10-Fulfilment">
+                    <rect id="Background" fill="#00334B" x="0" y="0" width="1281" height="164.885417"></rect>
+                    <g id="same-day" transform="translate(893.573611, 78.945139)">
+                        <g id="Icon-Instacart-white" transform="translate(0.000000, 1.000000)">
+                            <g id="Icon-Instacart" transform="translate(0.426389, 0.054861)">
+                                <g id="Group-6" transform="translate(2.000000, 0.000000)">
+                                    <path d="M29.7578594,27.0996254 C26.5117499,33.8794294 2.29323689,45.7689395 0.235761383,43.7115908 C-1.82158732,41.6541153 10.0769256,17.4264726 16.8568565,14.1803631 C19.3921187,12.9663689 23.6598651,15.0876254 26.2658824,17.6814697 C28.8512311,20.2976311 30.9716,24.5647435 29.7578594,27.0996254 Z" id="Fill-1" fill="#FFFFFF"></path>
+                                    <g id="Group-5" transform="translate(22.824207, 0.074305)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <g id="Clip-4"></g>
+                                        <path d="M7.15679654,0.34101902 C9.34297522,0.932546398 11.5510905,2.4393245 11.8126813,4.68852334 C12.2924968,8.81412565 4.99838732,15.31763 3.26704438,14.8536646 C1.53557464,14.3896991 -1.5158951,5.20206801 0.950640922,1.76981441 C2.22220288,0.000811527378 4.96858905,-0.248099135 7.15768415,0.333157349 C7.15768415,0.333157349 7.15743055,0.335820173 7.15679654,0.34101902 Z M16.2642893,14.7551401 C16.2644161,14.7550133 16.2645429,14.7550133 16.2645429,14.7550133 C15.8428023,13.1954859 14.7680357,11.6201084 13.1634939,11.4334571 C10.2210732,11.0912207 5.58230663,16.2937452 5.91325764,17.5286617 C6.24420865,18.7635781 12.7971654,20.9399931 15.2451885,19.1806271 C16.5069867,18.273872 16.6845084,16.3150478 16.2699954,14.7536184 L16.2642893,14.7551401 Z" id="Fill-3" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
