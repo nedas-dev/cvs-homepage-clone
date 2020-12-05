@@ -2,6 +2,7 @@
   "name": "cvs_homepage_project",
   "version": "1.0.0",
   "description": "CVS home page clone with HTML/CSS/SASS",
+  "homepage": "https://nedas-dev.github.io/cvs-homepage-clone",
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch sass:css"
